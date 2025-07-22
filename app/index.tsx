@@ -1,3 +1,4 @@
+import CardButton from "@/components/CardButton";
 import { images, offers } from "@/constants";
 import { Fragment } from "react";
 import { FlatList, Image, Pressable, Text, TouchableOpacity, View } from "react-native";
@@ -50,7 +51,7 @@ export default function Index() {
                 <Text className="paragraph-bold text-dark-100">kharagpur</Text>
               </TouchableOpacity>
             </View>
-            <Text>Cart</Text>
+            <CardButton/>
           </View>
         )}
       /> 
