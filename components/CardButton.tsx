@@ -1,13 +1,13 @@
-import { images } from '@/constants'
-import React, { Component } from 'react'
-import { Image, Text, TouchableOpacity, View } from 'react-native'
+import { images } from '@/constants';
+import React from 'react';
+import { Image, Text, TouchableOpacity, View } from 'react-native';
 
-export class CardButton extends Component {
-    
-    render() {
-      const totalitems = 10
-    return (
-        <TouchableOpacity className='cart-btn' onPress={() => {
+
+
+const CardButton = () => {
+  const totalitems = 30;
+  return (
+    <TouchableOpacity className='cart-btn' onPress={() => {
             
         }}>
             <Image source={images.bag} alt='bag' className='size-5' resizeMode='contain' />
@@ -18,8 +18,7 @@ export class CardButton extends Component {
                 </View>
             )}
       </TouchableOpacity>
-    )
-  }
+  )
 }
 
 export default CardButton
