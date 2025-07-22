@@ -18,5 +18,7 @@ export default function RootLayout() {
   }, [fontsLoaded, error]);
   return <Stack screenOptions={{
     headerShown: false,
+    contentStyle: { backgroundColor: "white" },
+    animation: "fade",
   }}/>;
 }
